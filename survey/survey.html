@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Itim" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <title>J&D's Bakery - Customer Feedback Form</title>
+</head>
+<body>
+    <main>
+        <header>
+                <div class="ribbon_dashes">
+                    <h1>J&D's Bakery - Feedback Form</span></h1>
+                </div>
+        </header>
+        <section>
+            <div class="inner">
+                <p class="description">Let us know how we did. Your feedback helps us improve!</p>
+                <p class="req">* = required</p>
+                <form>
+                    <div class="field1">
+                        <label for="name">* Name:</label>
+                        <br>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="field1">
+                        <label for="email">* E-mail:</label>
+                        <br>
+                        <input type="email" id="email" name="email" placeholder="Enter your e-mail address" required>
+                    </div>
+                    <div class="field1">
+                        <label for="age">* Age:</label>
+                        <br>
+                        <input type="number" id="age" name="age" placeholder="Enter your age" min="1" max="101" required>
+                    </div>
+                    <div class="field1">
+                        <label for="visits">How many times have you visited us?</label>
+                        <br>
+                        <select id="visits" name="visits" class="visits">
+                            <option value="" selected disabled>Select an option</option>
+                            <option  value="0">0-1</option>
+                            <option value="2">2-3</option>
+                            <option value="3">3-4</option>
+                            <option value="5">5+</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div class="field2">
+                        <fieldset>
+                            <p class="question2"><b>What kind of sweet(s) did you purchase?</b></p>
+                            <legend>What kind of sweet(s) did you purchase?</legend>
+                            <br>
+                            <label for="cake" class="container2">Cake
+                            <input id="cake" type="checkbox" name="sweets" value="cake">
+                            <span class="checkmark"></span>
+                            </label>
+                            <label for="cookie" class="container2">Cookie
+                            <input id="cookie" type="checkbox" name="sweets" value="cookie">
+                            <span class="checkmark"></span>
+                            </label>
+                            <label for="cupcake" class="container2">Cupcake
+                            <input id="cupcake" type="checkbox" name="sweets" value="cupcake">
+                            <span class="checkmark"></span>
+                            </label>
+                            <label for="donut" class="container2">Donut
+                            <input id="donut" type="checkbox" name="sweets" value="donut">
+                            <span class="checkmark"></span>
+                            </label>
+                            <label for="choco" class="container2">Chocolate
+                            <input id="choco" type="checkbox" name="sweets" value="choco">
+                            <span class="checkmark"></span>
+                            </label>
+                        </fieldset>
+                    </div>
+                    <br>
+                    <p class="rate">Please rate the following:</p>
+                    <div class="field3">
+                        <fieldset>
+                            <p class="question"><b>Staff</b></p>
+                            <legend>Staff</legend>
+                            <br>
+                            <label for="excellent" class="container">Excellent
+                            <input id="excellent" type="radio" name="staff" value="excellent">
+                            <span class="radio"></span>
+                            </label>
+                            <label for="good" class="container">Good
+                            <input id="good" type="radio" name="staff" value="good">
+                            <span class="radio"></span>
+                            </label>
+                            <label for="fair" class="container">Fair
+                            <input id="fair" type="radio" name="staff" value="fair">
+                            <span class="radio"></span>
+                            </label>
+                            <label for="poor" class="container">Poor
+                            <input id="poor" type="radio" name="staff" value="poor">
+                            <span class="radio"></span>
+                            </label>
+                        </fieldset>
+                    </div>
+                    <div class="field3">
+                        <fieldset>
+                            <p class="question"><b>Quality</b></p>
+                            <legend>Quality</legend>
+                            <br>
+                            <label for="excellent2" class="container">Excellent
+                            <input id="excellent2" type="radio" name="quality" value="excellent">
+                            <span class="radio"></span>
+                            </label>
+                            <label for="good2" class="container">Good
+                            <input id="good2" type="radio" name="quality" value="good">
+                            <span class="radio"></span>
+                            </label>
+                            <label for="fair2" class="container">Fair
+                            <input id="fair2" type="radio" name="quality" value="fair">
+                            <span class="radio"></span>
+                            </label>
+                            <label for="poor2" class="container">Poor
+                            <input id="poor2" type="radio" name="quality" value="poor">
+                            <span class="radio"></span>
+                            </label>
+                        </fieldset>
+                    </div>
+                    <div class="field3">
+                        <fieldset>
+                            <p class="question"><b>Cleanliness</b></p>
+                            <legend>Cleanliness</legend>
+                            <br>
+                            <label for="excellent3" class="container">Excellent
+                            <input id="excellent3" type="radio" name="clean" value="excellent">
+                            <span class="radio"></span>
+                            </label>
+                            <label for="good3" class="container">Good
+                            <input id="good3" type="radio" name="clean" value="good">
+                            <span class="radio"></span>
+                            </label>
+                            <label for="fair3" class="container">Fair
+                            <input id="fair3" type="radio" name="clean" value="fair">
+                            <span class="radio"></span>
+                            </label>
+                            <label for="poor3" class="container">Poor
+                            <input id="poor3" type="radio" name="clean" value="poor">
+                            <span class="radio"></span>
+                            </label>
+                        </fieldset>
+                    </div>
+                    <div class="field3">
+                        <fieldset>
+                            <p class="question"><b>Atmosphere</b></p>
+                            <legend>Atmosphere</legend>
+                            <br>
+                            <label for="excellent4" class="container">Excellent
+                            <input id="excellent4" type="radio" name="atmosphere" value="excellent">
+                            <span class="radio"></span>
+                            </label>
+                            <label for="good4" class="container">Good
+                            <input id="good4" type="radio" name="atmosphere" value="good">
+                            <span class="radio"></span>
+                            </label>
+                            <label for="fair4" class="container">Fair
+                            <input id="fair4" type="radio" name="atmosphere" value="fair">
+                            <span class="radio"></span>
+                            </label>
+                            <label for="poor4" class="container">Poor
+                            <input id="poor4" type="radio" name="atmosphere" value="poor">
+                            <span class="radio"></span>
+                            </label>
+                        </fieldset>
+                    </div>
+                    <br>
+                    <div class="field1">
+                        <label for="comments">Any Additional Comments?</label>
+                        <br>
+                        <textarea id="comments" name="comments" placeholder="Enter your comments here"></textarea>
+                    </div>
+                    <div class="field3">
+                        <fieldset>
+                            <p class="question"><b>Would you recommend us to a friend?</b></p>
+                            <legend>Would you recommend us to a friend?</legend>
+                            <br>
+                            <label for="yes" class="container">Yes
+                            <input id="yes" type="radio" name="friend" value="yes">
+                            <span class="radio"></span>
+                            </label>
+                            <label for="no" class="container">No
+                            <input id="no" type="radio" name="friend" value="no">
+                            <span class="radio"></span>
+                            </label>
+                        </fieldset>
+                    </div>
+                    <br>
+                    <div class="field4">
+                        <button id="submit" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

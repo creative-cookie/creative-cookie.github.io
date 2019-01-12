@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Credit Card Validator - VanillaJS</title>
+</head>
+<body>
+  <h1>Credit Card Validator - VanillaJS</h1>
+  <main>
+      <p class="title">Enter a credit card number to check whether it is mathmatically valid based on the
+        Luhn algorithm. Do not use dashes. Any dashes entered will be automatically removed.
+        <br>
+        <br>
+        It will also identify whether the number is from any of the following card issuers:
+        <br>
+        <i>Visa, American Express, Discover, MasterCard</i>
+        <br>
+        <br>
+        Visit <a href="https://developer.paypal.com/docs/classic/payflow/payflow-pro/payflow-pro-testing/#credit-card-numbers-for-testing">
+          Paypal for a list of numbers that they recommend for testing</a>.
+      </p>
+      <div class="container">
+          <ul>
+              <li><span class="fab fa-cc-visa" id="isVisa"></span></li>
+              <li><span class="fab fa-cc-amex" id="isAmex"></span></li>
+              <li><span class="fab fa-cc-discover" id="isDiscover"></span></li>
+              <li><span class="fab fa-cc-mastercard" id="isMaster"></span></li>
+          </ul>
+          <input type="text" name="creditNum" placeholder="Enter a credit card number" id="creditNum" maxlength="25">
+          <p id="feedbackText">Password does not meet guidelines</p>
+      </div>
+      <span id="validate">Validate</span>
+  </main>
+  <footer>&copy; For Educational Purposes Only - 2018</footer>
+  <script src="credit.js"></script>
+</body>
+</html>

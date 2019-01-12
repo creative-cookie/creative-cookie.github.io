@@ -1,0 +1,348 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #61574c;
+}
+/* ########## HEADER & NAV ########## */
+header{
+    background-color: #333;
+    color: #fff;
+}
+
+.headA{
+    display: inline-block;
+    padding: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 70px;
+}
+.headA .icon{
+    display: inline-block;
+    padding: 0;
+    border: solid 3px #CFBFB0;
+	width: 2em;
+	line-height: 2em;
+	border-radius: 50%;
+    text-align: center;
+    color:lightgreen;
+}
+.headA .park{
+    color: #CFBFB0;
+}
+.headB ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.headB a{
+    display: block;
+    color: inherit;
+    padding: 15px;
+    text-decoration: none;
+    border-bottom: 1px solid #fff;
+}
+
+.headB a:hover{
+    background-color: #CFBFB0;
+    color: #333;
+}
+
+@media (min-width:768px)
+{
+    header .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    .headB ul{
+        display: flex;
+    }
+    .headB a{
+        border: none;
+    }
+    .headC{
+        display: none;
+    }
+    .headB{
+        display: block !important;
+    }
+}
+
+@media (max-width:767px)
+{
+    .container-small{
+        display: flex;
+        align-items: center;
+		justify-content: space-between;
+    }
+    .headC {
+		margin-right: 20px;
+		padding: 0;
+		border: none;
+		outline: none;
+		background: none;
+		font-size: 28px;
+		opacity: 0.8;
+        cursor: pointer;
+        color: white;
+    }
+    .headC:hover {
+		opacity: 0.3;
+    }
+    .headB{
+        display: none;
+    }
+
+}
+
+/* ########## HERO ########## */
+.conA {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 450px;
+    max-width: 1000px;
+	background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(img/leafypark_hero_img.jpg);
+	background-position: bottom center;
+	background-size: cover;
+	color: #fff;
+    text-align: center;
+    margin: 0 auto;
+}
+.conA h1{
+    font-size: 30px;
+    background-color: rgba(51, 51, 51, 0.5);
+    padding: 10px 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 15px 0 0 0;
+}
+
+.conA .stroll{
+    color: #EDD5BA;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 32px;
+}
+
+.conA .icon{
+    display: inline-block;
+    padding: 0;
+    text-align: center;
+    color:white;
+    font-size: 30px;
+    margin: 0;
+}
+
+.conA a{
+    display: inline-block;
+    margin-top: 25px;
+	padding: 10px 20px;
+	border: solid 1px #CFBFB0;
+	border-radius: 6px;
+    background-color:#333;
+	color: #CFBFB0;
+	font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.conA a:hover{
+    background-color: #CFBFB0;
+    color: #333;
+	border-color: #333;
+}
+
+/* ########## conB ########## */
+.conB .container{
+    padding-top: 70px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+.conB .text{
+    padding: 0 20px 50px 20px;
+    text-align: center;
+    border: none;
+}
+.conB .icon{
+	display: inline-block;
+	margin-bottom: 20px;
+	font-size: 40px;
+	width: 2em;
+	line-height: 2em;
+	border-radius: 50%;
+	text-align: center;
+	background-color: #61574c;
+	color: #fff;
+}
+.conB h2{
+    margin: 0 0 20px 0;
+    color: #333;
+}
+.conB p{
+	margin: 0 0 20px 0;
+	font-size: 15px;
+	line-height: 1.8;
+    opacity: 0.8;
+    color: #333;
+}
+.conB .more p{
+    font-weight: bold;
+    font-size: 20px;
+    color: #333;
+    opacity: 1;
+    font-style: italic;
+    margin: 0 0 15px 0;
+}
+.conB a{
+    display: inline-block;
+    padding: 10px 20px;
+    margin-bottom: 50px;
+	border: solid 1px #333;
+	border-radius: 6px;
+    background-color:#61574c;
+	color: #fff;
+	font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.conB a:hover{
+    background-color: #CFBFB0;
+    color: #333;
+	border-color: #333;
+}
+@media (min-width: 768px)
+{
+    .conB .container{
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .conB .text{
+        flex: 0 0 25%;
+    }
+    .conB .more{
+        flex: 0 0 100%;
+    }
+}
+
+/* ########## FOOTER ########## */
+footer{
+    color: #fff;
+    background-color: #333;
+}
+footer .container{
+    padding: 40px 20px 10px 20px;
+}
+/* ##### FOOTER MENU ##### */
+.footA div{
+	margin-bottom: 20px;
+}
+.footA h3{
+	margin-top: 0;
+	margin-bottom: 10px;
+	border-bottom: solid 1px #fff;
+	font-size: 14px;
+}
+.footA ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.footA a{
+	display: block;
+	padding: 5px;
+	color: inherit;
+	font-size: 13px;
+	text-decoration: none;
+}
+.footA a:hover{
+	background-color: rgba(0,0,0,0.3);
+}
+/* ##### FOOTER HOURS INFO ##### */
+.footB{
+    text-align: left;
+    margin-bottom: 20px;
+}
+.footB h2{
+	margin-top: 0;
+	margin-bottom: 10px;
+	font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #fff;
+}
+.footB p{
+	margin-top: 0;
+	margin-bottom: 0;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.footB a{
+	color: #fff;
+	text-decoration: none;
+}
+/* ##### FOOTER CONTACT INFO ##### */
+.footC{
+    text-align: center;
+    margin: 15px 0 0 0;
+}
+.footC p{
+    font-size: 13px;
+    margin: 0;
+    line-height: 1.8;
+}
+.footC .icon{
+    margin-right: 5px;
+}
+.footC .space{
+    margin: 0 5px;
+}
+/* ##### COPYRIGHT/EDUCATIONAL ONLY INFO ##### */
+.footD{
+    font-size: 12px;
+    text-align: center;
+    margin: 10px 0 0 0;
+    padding: 0;
+}
+@media (min-width: 768px){
+    footer .container{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1000px;
+        margin: 0 auto;
+        justify-content: space-around;
+    }
+    .footA{
+        display: flex;
+        flex: 0 0 70%;
+    }
+    .footA div{
+        flex: 1;
+    }
+    .footA div:not(:first-child) {
+		margin-left: 35px;
+    }
+    .footB{
+        flex: 0 0 23%;
+        text-align: right;
+        margin-left: 35px;
+    }
+    .footC{
+        flex: 0 0 100%;
+    }
+    .footD{
+        flex: 0 0 100%;
+    }
+}

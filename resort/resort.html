@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script>
+    $(function(){
+        $(".headC").click(function(){
+            $(".headB").slideToggle();
+        });
+    });
+    </script>
+
+    <title>Sandy Beach Resort - Home</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="container-small">
+                <a href="#" class="headA">
+                    <span class="fas fa-sun logo"></span><span class="sandy">Sandy</span>Beach <span class="hide">Resort</span></a>
+                <button type="button" class="headC">
+                    <span class="fa fa-bars" title="MENU"></span>
+                </button>
+            </div>
+            <nav class="headB">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#amenities">Amenities</a></li>
+                    <li><a href="#accomodations">Accomodations</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact-label">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <h1><span class="hide">Book the Perfect Getaway</span>
+                <div class="show">
+                    <p>Chill.</p>
+                    <span class="book-header-btn-small">Book Now</span>
+                </div>
+            </h1>
+            <div class="book-now">
+                <div class="book-now-container">
+                    <form>
+                        <ul>
+                            <li>
+                                <label for="checkin">Check-In Date: </label>
+                                <input type="date" name="book-header" id="checkin">
+                            </li>
+                            <li>  
+                                <label for="checkout">Check-Out Date: </label>
+                                <input type="date" name="book-header" id="checkout">
+                            </li> 
+                            <li>
+                                <label for="guests">Guests: </label>
+                                <input type="number" name="book-header" id="guests" placeholder="Number of Guests">
+                            </li>
+                        </ul>
+                        <span class="book-header-btn">Book Now</span>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="amenities" id="amenities">
+        <div class="container-outer">
+            <h2>Amenities</h2>
+        </div>
+        <div class="container">
+            <div class="text">
+                <div class="icon-container">
+                <span class="fas fa-wifi icon"></span>
+                </div>
+                <div>
+                    <h3>Wi-Fi</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, obcaecati.</p>
+                </div>
+            </div>
+            <div class="text">
+                <div class="icon-container">
+                    <span class="fas fa-golf-ball icon"></span>
+                </div>
+                <div>
+                    <h3>Golf Course</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, totam? Dolorum, deserunt?</p>
+            </div>
+            </div>
+            <div class="text">
+                <div class="icon-container">
+                    <span class="fas fa-swimming-pool icon"></span>
+                </div>
+                <div>
+                    <h3>Swimming</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta.</p>
+                </div>
+            </div>
+            <div class="text">
+                <div class="icon-container">
+                    <span class="fas fa-fish icon"></span>
+                </div>
+                <div>
+                    <h3>Fishing</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam, possimus dicta!</p>
+                </div>
+            </div>
+            <div class="text" class="icon-container">
+                <div class="icon-container">
+                    <span class="fas fa-ship icon"></span>
+                </div>
+                <div>
+                    <h3>Boating</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo!</p>
+                </div>
+            </div>
+            <div class="text">
+                <div class="icon-container">
+                    <span class="fas fa-glass-martini icon"></span>
+                </div>
+                <div>
+                    <h3>Lounge Bar</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, commodi.</p>
+                </div>
+            </div>
+        </div>
+        <div class="more">      
+            <p>...and so much more!</p>
+        </div> 
+    </section>
+    <section class="accomodations" id="accomodations">
+        <div class="container-outer">
+            <h2>Accomodations</h2>
+        </div>
+        <div class="container">
+            <article>
+                    <div class="content">
+                        <div class="photo" style="background-image: url(img/room1.jpg);"></div>
+                        <div class="text">
+                            <div class="room-type">
+                                <h3>Room Style 1</h3>
+                                <span class="check-avail-btn">Check Availability</span>
+                            </div>
+                            <ul>
+                                <li>2 Queen-Sized Beds</li>
+                                <li>42" HD TV</li>
+                                <li>Telephone</li>
+                                <li>Microwave</li>
+                                <li>Coffee Pot</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="content">
+                        <div class="photo" style="background-image: url(img/room2.jpg);"></div>
+                        <div class="text">
+                            <div class="room-type">
+                                <h3>Room Style 2</h3>
+                                <span class="check-avail-btn">Check Availability</span>
+                            </div>
+                            <ul>
+                                <li>Single King-Sized Bed</li>
+                                <li>42" HD TV</li>
+                                <li>A/C</li>
+                                <li>Ceiling Fan</li>
+                                <li>Telephone</li>
+                                <li>Microwave</li>
+                                <li>Coffee Pot</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="content">
+                        <div class="photo" style="background-image: url(img/room3.jpg);"></div>
+                        <div class="text">
+                            <div class="room-type">
+                                <h3>Room Style 3</h3>
+                                <span class="check-avail-btn">Check Availability</span>
+                            </div>
+                            <ul>
+                                <li>2 Queen-Sized Beds</li>
+                                <li>50" HD TV</li>
+                                <li>A/C</li>
+                                <li>Ceiling Fan</li>
+                                <li>Private Patio</li>
+                                <li>Telephone</li>
+                                <li>Microwave</li>
+                                <li>Coffee Pot</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+        </div>
+    </section>
+    <div class="gallery-container-outer">
+            <h2>Gallery</h2>
+    </div>
+    <section class="gallery" id="gallery">
+        <div class="container" id="img-gallery">
+            <img src="img/gallery_img1.jpg" alt="beach" class="gallery-img">
+            <img src="img/gallery_img2.jpg" alt="beach" class="gallery-img">
+            <img src="img/gallery_img3.jpg" alt="beach" class="gallery-img">
+            <img src="img/gallery_img4.jpg" alt="beach" class="gallery-img">
+            <img src="img/gallery_img5.jpg" alt="beach" class="gallery-img">
+            <img src="img/gallery_img6.jpg" alt="beach" class="gallery-img">
+            <img src="img/gallery_img7.jpg" alt="beach" class="gallery-img">
+            <img src="img/gallery_img8.jpg" alt="beach" class="gallery-img">
+        </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+                <!-- The Close Button -->
+                <span id="close">&times;</span>
+            
+                <!-- Modal Content (The Image) -->
+                <div class="img-container">
+                <img class="modal-content" id="img01">
+                </div>
+                <!-- Modal Caption (Image Text) -->
+                <div id="caption"></div>
+            </div>
+    </section>
+    <div class="contact-container-outer">
+            <h2 id="contact-label">Contact</h2>
+    </div>
+    <section class="contact">
+        <div class="container">
+            <div class="contact-info">
+                <p>
+                    <span class="contact-title">SandyBeach Resort</span>
+                    <br>
+                    1234 Middle of Ocean
+                    <br>
+                    Middle of Ocean, Ocean 56789
+                    <br>
+                    <br>
+                    <span class="fas fa-phone"></span> (555) 555-5555
+                    <br>
+                    <span class="fas fa-envelope icon"></span>sandybeach@mail.com
+                </p>
+            </div>
+            <div>
+            <img src="img/resort_contact.jpg" alt="message in a bottle">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-inner">
+            <p class="top"><a href="#">Top<span class="fas fa-sort-up"></span></a></p>
+            <p class="disclaimer">For Educational Purposes Only - 2018 &copy;</p>
+        </div>
+    </footer>
+<script src="gallery.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+body{
+    margin: 10px 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fcfcfc;
+}
+h1{
+    text-align: center;
+}
+main{
+    max-width: 900px;
+    margin: 0 auto;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    box-shadow: 2px 2px 18px #eee;
+    background-color: #fefefe;
+    padding-bottom: 20px;
+}
+main .title{
+    font-weight: bold;
+    background-color: lightgreen;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+    margin: 0 0 10px 0;
+}
+a {
+  text-decoration: none;
+}
+.container{
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 15px 15px;
+}
+main ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-style: italic;
+    display: flex;
+}
+main li{
+    padding: 0 0 10px 0;
+}
+
+#showHide{
+    margin-top: 15px;
+}
+
+.showHideLabel{
+    font-size: 14px;
+}
+
+input#creditNum{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 10px 0;
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    outline: none;
+}
+input#creditNum.valid{
+    border: 1px solid green;
+}
+input#creditNum.invalid{
+    border: 1px solid red;
+}
+
+.container span{
+    font-size: 36px;
+    color: #333;
+    opacity: 0.15;
+    margin-right: 8px;
+}
+
+
+span.valid{
+    opacity: 1;
+}
+#feedbackText{
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding: 0;
+    font-size: 12px;
+    font-weight: bold;
+    font-style: italic;
+    display: none;
+}
+
+#validate{
+  display: block;
+  background-color: lightgreen;
+  padding: 15px;
+  max-width: 30%;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer{
+    font-size: 13px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 15px;
+}

@@ -1,0 +1,307 @@
+body{
+    background-image: repeating-linear-gradient(90deg, #a5e7ff, #a5e7ff 30px, #8cdbf7 30px, #8cdbf7 60px);
+    font-family: Arial, Helvetica, sans-serif;
+    color: #664A2E;
+}
+
+main{
+    max-width: 750px;
+    background-color: #fbfbfb;
+    margin: 15px auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19);
+}
+
+header{
+    background-color: #c64849;
+    color: white;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    padding: 10px 0;
+}
+.ribbon_dashes{
+    border-style: dashed none;
+    border-width: 1px;
+    border-color:#FFF;
+}
+h1{
+    font-size: 36px;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 10px;
+    font-family: 'Itim', cursive;
+}
+
+.description{
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 25px;
+}
+.req
+{
+    text-align: right;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.inner{
+    max-width: 500px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.field1 input, textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgba(102, 74, 46, 0.466);
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+select{
+    padding: 8px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid rgba(102, 74, 46, 0.466);
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.field1 textarea{
+    height: 100px;
+    margin:0;
+}
+
+.field1{
+    margin-bottom: 25px;
+}
+
+.field1 label{
+    font-weight: bold;
+}
+.rate{
+    font-weight: bold;
+    text-decoration: underline;
+    margin: 0;
+}
+.field2 fieldset, .field3 fieldset{
+    border: 0;
+    margin: 0;
+    margin-bottom: 25px;
+    padding: 0;
+}
+.field2 label, .field3 label{
+    margin-right: 15px;
+}
+legend{
+    display: none;
+}
+
+.field2 .question{
+    margin: 5px 0 5px 0;
+    padding: 0;
+}
+.field2 .question2{
+    margin: 0;
+    padding: 0;
+}
+.field3 .question{
+    margin: 5px 0 0 0;
+}
+.field4{
+    padding-bottom: 25px;
+}
+#submit{
+    display: block;
+    background-color: #2E5966;
+    border: none;
+    color: white;
+    width: 50%;
+    padding: 10px;
+    font-weight: bold;
+    margin: 0 auto;  
+}
+#submit:hover{
+    animation-name:fill;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+@keyframes fill{
+    100%{
+        background-color: #c64849;
+    }
+}
+
+
+
+/*For Radio Buttons*/
+/* The container */
+.container {
+    position: relative;
+    padding-left: 22px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide default radio button */
+.container input {
+    display: inline-block;
+    position: absolute;
+    display: none;
+    cursor: pointer;
+}
+
+/* Custom radio button */
+.radio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: #664A2E;
+    border-radius: 50%;
+}
+
+.radio:before {
+    position: absolute;
+    content:"";
+    top: 3px;
+    left: 3px;
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .radio {
+    background-color: #333;
+}
+
+
+/* Create indicator */
+.radio:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show indicator when checked */
+.container input:checked ~ .radio:after {
+    display: block;
+}
+
+/* Style indicator */
+.container .radio:after {
+ 	top: 4px;
+	left: 4px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #2E5966;
+}
+
+/*For Checkboxes*/
+/* The container */
+.container2 {
+    position: relative;
+    padding-left: 22px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide default checkbox */
+.container2 input {
+    position: absolute;
+    display: none;
+    cursor: pointer;
+}
+
+/* Custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: #664A2E;
+}
+.checkmark:before {
+    position: absolute;
+    content:"";
+    top: 3px;
+    left: 3px;
+    height: 10px;
+    width: 10px;
+    background-color: white;
+}
+/* On mouse-over, add a grey background color */
+.container2:hover input ~ .checkmark {
+    background-color: #333;
+}
+
+/* Show checkmark*/
+.container2 input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style checkmark */
+.container2 .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 5px;
+    top: 1px;
+    width: 4px;
+    height: 8px;
+    border: solid #2E5966;
+    border-width: 0 2px 3px 0;
+    -webkit-transform: rotate(40deg);
+    -ms-transform: rotate(40deg);
+    transform: rotate(40deg);
+}
+
+@media (max-width:620px){
+    h1{
+        font-size: 24px;
+    }
+}
+
+@media (max-width:520px){
+    .container2 {
+        display: block;
+    }
+}
+
+@media (max-width: 460px)
+{
+    h1{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 400px)
+{
+    h1{
+        font-size: 18px;
+    }
+    .container{
+        display: block;
+    }
+}

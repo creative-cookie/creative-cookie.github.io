@@ -1,0 +1,293 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fafafa;
+}
+
+/*########## HEADER ##########*/
+header h1{
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-family: 'Franklin Gothic Book', sans-serif;
+}
+.site-name span{
+    color: #ff6633;
+}
+
+.menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menu a{
+    text-decoration: none;
+    display: block;
+    background-color: #eee;
+    border-top: 1px solid rgb(158, 158, 158);
+    color: #333;
+    padding: 12px 25px;
+}
+.menu a:hover{
+    opacity: 0.8;
+}
+/*
+header{
+    padding: 0 15px;
+}
+*/
+.header-inner{
+    padding: 15px;
+}
+
+/*######### HERO ##########*/
+.hero{
+    background-image: url(img/header_img2.jpg);
+    max-width: 100%;
+    min-height: 499px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-1{
+    background-color: rgba(229, 80, 31, 0.9);
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+.hero-1 h1{
+    font-size: 40px;
+    color: #fff;
+    margin: 0;
+}
+.hero-1 p{
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+}
+
+/*########## PORTFOLIO #########*/
+.portfolio{
+    margin-top: 20px;
+    padding: 15px;
+}
+.portfolio-container{
+    margin-top: 10px;
+}
+.portfolio article{
+    display: flex;
+}
+.portfolio-title{
+    font-family: 'Franklin Gothic Book', sans-serif;
+    margin: 0;
+    padding-left: 5px;
+    border-left: 10px solid #ff6633;
+}
+.portfolio h3{
+    font-size: 18px;
+    margin: 5px 0 0 0;
+}
+.portfolio .photo{
+    min-height: 240px;
+    background-position: top center;
+    background-size: cover;
+}
+.portfolio a{
+    margin: 10px;
+    display: block;
+    text-decoration: none;
+    color: #333;
+    flex: 1;
+    border: 2px solid #ddd;
+    background-color: #ddd;
+}
+.portfolio a:hover{
+    opacity: 0.8;
+}
+.portfolio .text{
+    margin: 10px;
+}
+.portfolio ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.portfolio li{
+    flex: 0 0 45px;
+    background-color: #ff6633;
+    margin-right: 5px;
+    margin-top: 5px;
+    color: #fff;
+    padding: 3px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 2px;
+}
+/*########## SKILLS ##########*/
+.skills{
+    background-color: #ff6633;
+    color: #fff;
+    margin-top: 25px;
+}
+.skills-title{
+    font-family: 'Franklin Gothic Book', sans-serif;
+    margin: 0;
+    padding-left: 5px;
+    color: #fff;
+    border-left: 10px solid #fff;
+}
+.skills .photo{
+    min-height: 220px;
+    background-image: url(img/skills_img.jpg);
+    background-position: top left;
+    background-size: cover;
+}
+.skills .text{
+    padding: 15px;
+}
+.skills .list{
+    margin-top: 15px;
+}
+.skills ul {
+    column-width: 150px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.skills li{
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+    margin-right: 5px;
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+}
+.skills li:hover{
+    background-color: rgba(255,255,255,0.2);
+}
+
+
+
+/*########## FOOTER ##########*/
+footer {
+    background-color: #eee;
+    color: #333;
+    text-align: center;
+    padding: 10px 15px;
+    font-size: 14px;
+}
+footer p{
+    margin: 0;
+    padding: 0;
+}
+
+@media(max-width:533px){
+    /*##### MENU #####*/
+    .menu{
+        display: none;
+    }
+    .header-smaller{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu-button{
+        padding: 0;
+        border: none;
+        outline: none;
+        background: none;
+        font-size: 28px;
+        color: #ff6633;
+        cursor: pointer;
+    }
+    .menu-button:hover{
+        opacity: 0.3;
+    }
+    /*##### HERO #####*/
+    .hero{
+        min-height: 320px;
+        background-position: top center;
+    }
+    .hero-1{
+        padding: 5px 0 5px 0;
+    }
+    .hero-1 h1{
+        font-size: 36px;
+    }
+    .hero-1 p{
+        font-size: 18px;
+    }
+}
+
+@media(min-width:534px){
+    /*##### MENU #####*/
+    .header-inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu ul{
+        display: flex;
+    }
+    .menu a{
+        border-top: none;
+        margin-left: 10px;
+        width: 65px;
+        text-align: center;
+    }
+    .menu{
+        display: block !important;
+    }
+    .menu-button{
+        display: none;
+    }
+}
+
+@media (min-width:640px) and (max-width:940px){
+    .portfolio-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .portfolio-container article{
+        flex: 0 0 50%;
+    }
+}
+
+@media (min-width:941px){
+    .portfolio-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .portfolio-container article{
+        flex: 0 0 33.333%;
+    }
+    .skills-container{
+        display: flex;
+    }
+    .skills .photo{
+        flex: 2;
+    }
+    .skills .text{
+        flex: 3;
+    }
+}
+
+@media(min-width:1190px){
+    .header-inner, .hero, .portfolio, .skills-container{
+        width: 1140px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    header{
+        margin-bottom: 20px;
+        border-bottom: solid 1px #dddddd;
+    }
+}

@@ -1,0 +1,179 @@
+body{
+  font-family: arial, sans-serif;
+  background-color: #fcfcfc;
+}
+
+h1{
+  text-align: center;
+}
+
+#addTaskArea{
+  max-width: 780px;
+  margin:0 auto;
+  margin-bottom: 10px;
+  padding: 15px;
+  border: 8px solid #eee;
+  box-sizing: border-box;
+}
+
+input#task{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    outline: none;
+}
+.taskLabel{
+  font-weight: bold;
+  font-size: 18px;
+  margin-left: 5px;
+}
+.limit, #charCount{
+  font-size: 13px;
+  color: #888;
+}
+
+input[type="radio"]{
+  margin-top: 10px;
+}
+
+.priLabel{
+  margin-right: 10px;
+}
+
+#charCount{
+  margin: 0 0 15px 5px;
+  padding: 0;
+}
+
+#addTask{
+  display: block;
+  width: 100%;
+  padding: 10px;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+  background-color: lightblue;
+  box-sizing: border-box;
+  margin-top: 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+
+main{
+  max-width: 1000px;
+  margin:0 auto;
+  display: flex;
+  justify-content: space-between;
+  border: 8px solid #eee;
+}
+
+
+.title{
+  display: block;
+  text-align: center;
+  background-color: #ccc;
+  padding: 15px;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+main section{
+  flex:1;
+  min-height: 705px;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  margin: 10px;
+  height: 150px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  box-shadow: 1px 2px 10px -5px #333;
+}
+
+.arrow{
+  font-size: 32px;
+  flex: 1;
+  text-align: center;
+  align-self: center;
+}
+
+li p{
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  flex: 5;
+}
+
+.trash{
+  text-align: center;
+  padding: 0 15px 15px 15px;
+  margin: 0;
+  position: absolute;
+  bottom: -18px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.highPriority{
+  background-color: #fc7272;
+}
+
+.medPriority{
+  background-color: #fffe92;
+}
+
+.lowPriority{
+  background-color: #bcffa1;
+}
+
+.left, .right{
+  cursor: pointer;
+}
+
+#toDo .left{
+  opacity: 0.15;
+}
+
+#doing .left{
+  opacity: 1;
+}
+
+#done .right{
+  opacity: 0.15;
+}
+
+#toDo{
+  border-right: 5px dashed #eee;
+}
+
+#doing{
+  border-right: 5px dashed #eee;
+}
+
+footer{
+    font-size: 13px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 15px;
+}
